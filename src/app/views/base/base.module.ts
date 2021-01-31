@@ -47,6 +47,13 @@ import { NavbarsComponent } from './navbars/navbars.component';
 
 // Components Routing
 import { BaseRoutingModule } from './base-routing.module';
+import { FarmerComponent } from './farmer/farmer.component';
+import { CreateFarmerComponent } from './farmer/create-farmer/create-farmer.component';
+import { ContractComponent } from './contract/contract.component';
+import { CreateContractComponent } from './contract/create-contract/create-contract.component';
+import { FarmComponent } from './farm/farm.component';
+import { CreateFarmComponent } from './farm/create-farm/create-farm.component';
+
 
 @NgModule({
   imports: [
@@ -74,7 +81,14 @@ import { BaseRoutingModule } from './base-routing.module';
     PopoversComponent,
     ProgressComponent,
     TooltipsComponent,
-    NavbarsComponent
+    NavbarsComponent,
+    FarmerComponent,
+    CreateFarmerComponent,
+    ContractComponent,
+    CreateContractComponent,
+    FarmComponent,
+    CreateFarmComponent,
+  
   ]
 })
 export class BaseModule { }

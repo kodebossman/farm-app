@@ -2,7 +2,7 @@ import { INavData } from '@coreui/angular';
 
 export const navItems: INavData[] = [
   {
-    name: 'Dashboard',
+    name:  'SMART FARMER',
     url: '/dashboard',
     icon: 'icon-speedometer',
     badge: {
@@ -12,44 +12,49 @@ export const navItems: INavData[] = [
   },
   {
     title: true,
-    name: 'Theme'
+    name: 'CONTRACTS FORMS'
   },
   {
-    name: 'Colors',
+    name: 'Contract List',
     url: '/theme/colors',
     icon: 'icon-drop'
   },
   {
-    name: 'Typography',
+    name: 'Contract Forms',
+    url: '/theme/typography',
+    icon: 'icon-pencil'
+  },
+  {
+    name: 'Contract Inputs',
     url: '/theme/typography',
     icon: 'icon-pencil'
   },
   {
     title: true,
-    name: 'Components'
+    name: 'CONTRACT FARMING'
   },
   {
-    name: 'Base',
+    name: 'FARMERS',
     url: '/base',
     icon: 'icon-puzzle',
     children: [
       {
-        name: 'Cards',
-        url: '/base/cards',
+        name: 'Farmers List',
+        url: '/base/farmers',
         icon: 'icon-puzzle'
       },
       {
-        name: 'Carousels',
+        name: 'Assets',
         url: '/base/carousels',
         icon: 'icon-puzzle'
       },
       {
-        name: 'Collapses',
+        name: 'Farmers',
         url: '/base/collapses',
         icon: 'icon-puzzle'
       },
       {
-        name: 'Forms',
+        name: 'Equipment',
         url: '/base/forms',
         icon: 'icon-puzzle'
       },
@@ -97,22 +102,27 @@ export const navItems: INavData[] = [
     ]
   },
   {
-    name: 'Buttons',
+    name: 'PROJECTS',
     url: '/buttons',
     icon: 'icon-cursor',
     children: [
       {
-        name: 'Buttons',
+        name: 'Project List ',
         url: '/buttons/buttons',
         icon: 'icon-cursor'
       },
       {
-        name: 'Dropdowns',
+        name: 'Project Inputs',
         url: '/buttons/dropdowns',
         icon: 'icon-cursor'
       },
       {
-        name: 'Brand Buttons',
+        name: 'Project Plan',
+        url: '/buttons/brand-buttons',
+        icon: 'icon-cursor'
+      },
+      {
+        name: 'Project Activity',
         url: '/buttons/brand-buttons',
         icon: 'icon-cursor'
       }

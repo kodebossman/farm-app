@@ -1,0 +1,27 @@
+<div class="form-froup row">
+
+    <label class="col-sm-2 col-form-label">Farmer Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="farmerName"
+        placeholder="Enter farmer Name">
+    </div>
+    <label class="col-sm-2 col-form-label">Surname</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="surname"
+        placeholder="Enter farmer surname">
+    </div>
+    <label class="col-sm-2 col-form-label">National ID Number:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="nationalID"
+        placeholder="Enter National ID Number">
+    </div>
+</div>
+
+
+<button (click)="addFarmer()" *ngIf="farmer.ID==0" class="btn btn-primary">
+    Add
+</button>
+
+<button (click)="updateFarmer()" *ngIf="farmer.ID!=0" class="btn btn-primary">
+    Update
+</button>

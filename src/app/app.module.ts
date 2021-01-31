@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
@@ -42,6 +44,8 @@ import { AppRoutingModule } from './app.routing';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {ModalModule} from 'ngx-bootstrap/modal';
 
 @NgModule({
   imports: [
@@ -59,6 +63,11 @@ import { ChartsModule } from 'ng2-charts';
     ChartsModule,
     IconModule,
     IconSetModule.forRoot(),
+    HttpClientModule,
+    NgbModule,
+    ModalModule.forRoot(),
+    
+   
   ],
   declarations: [
     AppComponent,
@@ -66,7 +75,8 @@ import { ChartsModule } from 'ng2-charts';
     P404Component,
     P500Component,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+   
   ],
   providers: [
     {
