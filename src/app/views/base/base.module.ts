@@ -53,6 +53,8 @@ import { ContractComponent } from './contract/contract.component';
 import { CreateContractComponent } from './contract/create-contract/create-contract.component';
 import { FarmComponent } from './farm/farm.component';
 import { CreateFarmComponent } from './farm/create-farm/create-farm.component';
+import { EquipmentComponent } from './equipment/equipment.component';
+import { CreateEquipmentComponent } from './equipment/create-equipment/create-equipment.component';
 
 
 @NgModule({
@@ -88,6 +90,10 @@ import { CreateFarmComponent } from './farm/create-farm/create-farm.component';
     CreateContractComponent,
     FarmComponent,
     CreateFarmComponent,
+   
+    EquipmentComponent,
+   
+    CreateEquipmentComponent,
   
   ]
 })

@@ -47,21 +47,21 @@ export class EquipmentComponent implements OnInit {
 
     }
     this.modalTitle="Add Farmer";
-    this.activateAddEditEComp=true;
+    this.activateAddEditEquipmentComp=true;
     console.log("clicked by user");
     this.bigSize=true;
 
   }
 
 
-  editClick(editedFarmer){
-    this.farmer=editedFarmer;
-    this.modalTitle="Edit Farmer";
-    this.activateAddEditFarmerComp=true;
+  editClick(editedEquipment){
+    this.equipment=editedEquipment;
+    this.modalTitle="Edit Equipment";
+    this.activateAddEditEquipmentComp=true;
   }
 
   deleteClick(item){
-    if(confirm('Are you sure you want to delete this farmer??')){
+    if(confirm('Are you sure you want to delete this equipment??')){
       this.service.deleteFarmer(item.id).subscribe(data=>{
         this.refreshFarmerList();
       })
@@ -69,34 +69,34 @@ export class EquipmentComponent implements OnInit {
   }
 
   closeClick(){
-    this.activateAddEditFarmerComp=false;
+    this.activateAddEditEquipmentComp=false;
     this.refreshFarmerList();
   }
 
 
   refreshFarmerList(){
-    this.service.getFarmersList().subscribe(data=>{
-      this.farmersList=data;
-      this.farmerListWithoutFilter=data;
+    this.service.getEquipment().subscribe(data=>{
+      this.equipmentList=data;
+      this.equipmentListWithoutFilter=data;
     });
   }
 
   filterFn(){
-    var farmerIdFilter = this.farmerIdFilter;
-    var farmerNameFilter = this.farmerNameFilter;
+    var equipmentIdFilter = this.equipmentIdFilter;
+    var equipmentNameFilter = this.equipmentNameFilter;
 
-    this.farmerNameFilter = this.farmerListWithoutFilter.filter(function (foundFarmer){
-        return foundFarmer.id.toString().toLowerCase().includes(
-          farmerIdFilter.toString().trim().toLowerCase()
+    this.equipmentNameFilter = this.equipmentListWithoutFilter.filter(function (foundEquipment){
+        return foundEquipment.id.toString().toLowerCase().includes(
+          equipmentIdFilter.toString().trim().toLowerCase()
         )&&
-        foundFarmer.farmerName.toString().toLowerCase().includes(
-          farmerNameFilter.toString().trim().toLowerCase()
+        foundEquipment.equipmentName.toString().toLowerCase().includes(
+          equipmentNameFilter.toString().trim().toLowerCase()
         )
     });
   }
 
   sortResult(prop,asc){
-    this.farmersList = this.farmerListWithoutFilter.sort(function(a,b){
+    this.equipmentList = this.equipmentListWithoutFilter.sort(function(a,b){
       if(asc){
           return (a[prop]>b[prop])?1 : ((a[prop]<b[prop]) ?-1 :0);
       }else{

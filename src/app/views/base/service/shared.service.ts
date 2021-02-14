@@ -66,6 +66,22 @@ export class SharedService {
     return this.http.delete(this.apiUrl+'/farms/'+val);
   }
 
+  getEquipment():Observable<any[]>{
+    return this.http.get<any>(this.apiUrl+'/farmer-equipment/all');
+  }
+
+  addEquipment(val:any){
+    return this.http.post(this.apiUrl+'/farmer-equipment/create',val);
+  }
+
+  updateEquipment(val:any){
+    return this.http.put(this.apiUrl+'/farmer-equipment/update/'+val.id,val);
+  }
+
+  deleteEquipment(val:any){
+    return this.http.delete(this.apiUrl+'/farmer-equipment/delete/'+val);
+  }
+
   // UploadPhoto(val:any){
   //   return this.http.post(this.apiUrl+'/Employee/SaveFile',val);
   // }
