@@ -44,8 +44,8 @@ export const navItems: INavData[] = [
         icon: 'icon-puzzle'
       },
       {
-        name: 'Assets',
-        url: '/base/carousels',
+        name: 'Farms',
+        url: '/base/farms',
         icon: 'icon-puzzle'
       },
       {

@@ -30,7 +30,7 @@ export class SharedService {
   }
 
   deleteFarmer(val:any){
-    return this.http.delete(this.apiUrl+'/farmers/'+val);
+    return this.http.delete(this.apiUrl+'/farmers/delete/'+val);
   }
 
 

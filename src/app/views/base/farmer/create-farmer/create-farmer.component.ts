@@ -44,7 +44,8 @@ export class CreateFarmerComponent implements OnInit {
               gender: this.gender,
               description: this.description,
               district: this.district,
-              ward: this.ward
+              ward: this.ward,
+              village: this.village,
                
               };
     this.service.addFarmer(val).subscribe(res=>{

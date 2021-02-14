@@ -14,9 +14,11 @@ export class FarmerComponent implements OnInit {
   //opening modal form 
   openModal(template: TemplateRef<any>) {
     this.modalRef = this.modalService.show(template);
+    this.addClick();
   }
 
   farmersList:any=[];
+  bigSize:boolean = false;
 
   modalTitle:string;
   activateAddEditFarmerComp:boolean=false;
@@ -33,7 +35,6 @@ export class FarmerComponent implements OnInit {
   addClick(){
     this.farmer={
       id:0,
-      farmerName:"",
       name:"",
       surname:"",
       nationalID: "",
@@ -48,6 +49,7 @@ export class FarmerComponent implements OnInit {
     this.modalTitle="Add Farmer";
     this.activateAddEditFarmerComp=true;
     console.log("clicked by user");
+    this.bigSize=true;
 
   }
 
@@ -61,7 +63,6 @@ export class FarmerComponent implements OnInit {
   deleteClick(item){
     if(confirm('Are you sure you want to delete this farmer??')){
       this.service.deleteFarmer(item.id).subscribe(data=>{
-        alert(data.toString());
         this.refreshFarmerList();
       })
     }

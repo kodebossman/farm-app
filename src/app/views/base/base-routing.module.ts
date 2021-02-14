@@ -15,6 +15,7 @@ import { TooltipsComponent } from './tooltips.component';
 import { NavbarsComponent } from './navbars/navbars.component';
 import { FarmerComponent } from './farmer/farmer.component';
 import { ContractComponent } from './contract/contract.component';
+import { FarmComponent } from './farm/farm.component';
 
 const routes: Routes = [
   {
@@ -76,6 +77,13 @@ const routes: Routes = [
         component: ContractComponent,
         data:{
           title:'Contract Application List'
+        }
+      },
+      {
+        path: 'farms',
+        component: FarmComponent,
+        data:{
+          title:'Farm List'
         }
       },
       {

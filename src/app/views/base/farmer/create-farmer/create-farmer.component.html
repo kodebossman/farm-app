@@ -1,27 +1,59 @@
 <div class="form-froup row">
 
-    <label class="col-sm-2 col-form-label">Farmer Name</label>
+    <label class="col-sm-2 col-form-label">Name</label>
     <div class="col-sm-10">
         <input type="text" class="form-control" [(ngModel)]="farmerName"
-        placeholder="Enter farmer Name">
+        placeholder="Enter Farmer Name">
     </div>
     <label class="col-sm-2 col-form-label">Surname</label>
     <div class="col-sm-10">
         <input type="text" class="form-control" [(ngModel)]="surname"
-        placeholder="Enter farmer surname">
+        placeholder="Enter Farmer surname">
     </div>
-    <label class="col-sm-2 col-form-label">National ID Number:</label>
+    <label class="col-sm-2 col-form-label">National ID:</label>
     <div class="col-sm-10">
         <input type="text" class="form-control" [(ngModel)]="nationalID"
         placeholder="Enter National ID Number">
     </div>
+    <label class="col-sm-2 col-form-label">D.O.B:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="dateOfBirth"
+        placeholder="Enter Date Of Birth">
+    </div>
+    <label class="col-sm-2 col-form-label">Gender:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="gender"
+        placeholder="Enter Farmer Gender">
+    </div>
+    <label class="col-sm-2 col-form-label">Notes:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="description"
+        placeholder="Enter Some Notes">
+    </div>
+    <label class="col-sm-2 col-form-label">District:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="district"
+        placeholder="Enter Farmer District">
+    </div>
+    <label class="col-sm-2 col-form-label">Ward:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="ward"
+        placeholder="Enter Farmer Gender">
+    </div>
+    <label class="col-sm-2 col-form-label">Village:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="village"
+        placeholder="Enter Farmer Village">
+    </div>
+    
+
 </div>
 
 
-<button (click)="addFarmer()" *ngIf="farmer.ID==0" class="btn btn-primary">
+<button (click)="addFarmer()" *ngIf="farmer.id==0" class="btn btn-primary">
     Add
 </button>
 
-<button (click)="updateFarmer()" *ngIf="farmer.ID!=0" class="btn btn-primary">
+<button (click)="updateFarmer()" *ngIf="farmer.id!=0" class="btn btn-primary">
     Update
 </button>
