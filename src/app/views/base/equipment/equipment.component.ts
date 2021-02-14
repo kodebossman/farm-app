@@ -46,7 +46,7 @@ export class EquipmentComponent implements OnInit {
       farmerId: ""
 
     }
-    this.modalTitle="Add Farmer";
+    this.modalTitle="Add Equipment";
     this.activateAddEditEquipmentComp=true;
     console.log("clicked by user");
     this.bigSize=true;

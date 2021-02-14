@@ -16,6 +16,7 @@ import { NavbarsComponent } from './navbars/navbars.component';
 import { FarmerComponent } from './farmer/farmer.component';
 import { ContractComponent } from './contract/contract.component';
 import { FarmComponent } from './farm/farm.component';
+import { EquipmentComponent } from './equipment/equipment.component';
 
 const routes: Routes = [
   {
@@ -87,10 +88,10 @@ const routes: Routes = [
         }
       },
       {
-        path: 'carousels',
-        component: CarouselsComponent,
+        path: 'equipments',
+        component: EquipmentComponent,
         data: {
-          title: 'Carousels'
+          title: 'Equiment List'
         }
       },
       {

@@ -5,7 +5,7 @@ data-toggle="modal" data-target="#exampleModal"
 (click)="openModal(template)"
 data-backdrop="static" data-keyboard="false"
 >
-    Add Farmer
+    Add Equipment
   </button>
   
   <!-- Modal -->
@@ -18,7 +18,7 @@ data-backdrop="static" data-keyboard="false"
       </button>
     </div>
     <div class="modal-body">
-      <app-create-equipment []="equipment" *ngIf="activateAddEditEquipmentComp">
+      <app-create-equipment [equipment]="equipment" *ngIf="activateAddEditEquipmentComp">
       </app-create-equipment>
     </div>
   </ng-template>

@@ -90,9 +90,7 @@ import { CreateEquipmentComponent } from './equipment/create-equipment/create-eq
     CreateContractComponent,
     FarmComponent,
     CreateFarmComponent,
-   
     EquipmentComponent,
-   
     CreateEquipmentComponent,
   
   ]
