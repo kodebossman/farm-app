@@ -55,6 +55,8 @@ import { FarmComponent } from './farm/farm.component';
 import { CreateFarmComponent } from './farm/create-farm/create-farm.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { CreateEquipmentComponent } from './equipment/create-equipment/create-equipment.component';
+import { ProjectComponent } from './project/project.component';
+import { CreateProjectComponent } from './project/create-project/create-project.component';
 
 
 @NgModule({
@@ -92,6 +94,8 @@ import { CreateEquipmentComponent } from './equipment/create-equipment/create-eq
     CreateFarmComponent,
     EquipmentComponent,
     CreateEquipmentComponent,
+    ProjectComponent,
+    CreateProjectComponent,
   
   ]
 })

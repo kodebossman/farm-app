@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { SharedService } from '../service/shared.service';
 
 @Component({
   selector: 'app-contract',
@@ -7,9 +8,5 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContractComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+    ngOnInit(): void {}
 }
