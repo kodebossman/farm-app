@@ -57,6 +57,8 @@ import { EquipmentComponent } from './equipment/equipment.component';
 import { CreateEquipmentComponent } from './equipment/create-equipment/create-equipment.component';
 import { ProjectComponent } from './project/project.component';
 import { CreateProjectComponent } from './project/create-project/create-project.component';
+import { ProjectActivityComponent } from './project-activity/project-activity.component';
+import { CreateProjectActivityComponent } from './project-activity/create-project-activity/create-project-activity.component';
 
 
 @NgModule({
@@ -96,6 +98,8 @@ import { CreateProjectComponent } from './project/create-project/create-project.
     CreateEquipmentComponent,
     ProjectComponent,
     CreateProjectComponent,
+    ProjectActivityComponent,
+    CreateProjectActivityComponent,
   
   ]
 })
